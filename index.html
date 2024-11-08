@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Configuração do conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta charset="UTF-8">
+    <!-- Configuração de viewport para otimizar o layout em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Lista de Compras</title>
+
+    <!-- Pré-conexão para fontes externas para carregar mais rápido -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importação de fontes do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Numans&display=swap"
+        rel="stylesheet">
+
+    <!-- Link para o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+    <main>
+        <!-- Título principal da página -->
+        <h1>Gastos da Fran</h1>
+        <!-- Imagem ilustrativa ao lado do título -->
+        <img src="./img/bag.png" alt="sacola de compras">
+
+        <!-- Formulário para adicionar novos itens à lista -->
+        <form>
+            <!-- Campo de entrada para o nome do item a ser adicionado -->
+            <input class="input-item" id="input-item" type="text" placeholder="Digite o item que deseja adicionar">
+            <!-- Botão para salvar o item na lista -->
+            <button class="button-item" id="adicionar-item">Salvar item</button>
+        </form>
+
+        <div class="container-lista">
+            <!-- Subtítulo para a lista de compras -->
+            <h2>Lista de compras</h2>
+            <hr>
+
+            <!-- Lista de itens a serem comprados -->
+            <ul id="lista-de-compras">
+                <!-- Mensagem exibida quando a lista está vazia -->
+                <p id="mensagem-lista-vazia" style="display: block">Sua lista está vazia. Adicione itens a ela para não
+                    esquecer nada na próxima compra!</p>
+            </ul>
+
+            <!-- Contêiner para os itens já comprados -->
+            <div id="container-lista-comprados">
+                <!-- Subtítulo para a lista de itens comprados -->
+                <h2>Comprado</h2>
+                <hr />
+                <!-- Lista onde serão exibidos os itens comprados -->
+                <ul id="lista-comprados">
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script JavaScript principal para o funcionamento do sistema de lista, em módulo -->
+    <script src="scripts.js" type="module"></script>
+</body>
+
+</html>
